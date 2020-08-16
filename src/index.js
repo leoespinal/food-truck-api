@@ -35,8 +35,8 @@ passport.use(new LocalStrategy({
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
-// api routes v1
-app.use("/v1", routes);
+// api routes v1 -- Add /api for nginx routing
+app.use("/api/v1", routes);
 
 app.server.listen(config.port);
 // Tells us the port the server is actually running on
