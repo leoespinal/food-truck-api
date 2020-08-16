@@ -5,7 +5,7 @@ import Review from "../model/review";
 
 // imports authentication from middleware so that users cant access
 // certain endpoints without having been authenticated
-import { authenticate } from "../middleware/authmiddleware";
+import { authenticate } from "../middleware/authMiddleware";
 
 export default({ config, db }) => {
   let api = Router();
